@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunc(){
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    document.getElementById('class').innerHTML= Date();
+}
+</script>
+</head>
+<body>
+<h2>Demo JavaScript in Head</h2>
+
+<button id="button" onclick="myFunc()">Click me</button>
+<marquee behaviour="scroll" direction="left" scrollamount="30" id="class"style="background-color:red; color:blue;"></marquee>
+
+</body>
+</html>
