@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <forn action="POST">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email"><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password"><br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            
+            <input type="radio" name="gender" value="female">Female<br><br>
+
+            <label for="age">Age</label>
+            <select name="age" id="">
+                <option value="30">Under 30</option>
+            </select>
+
+
+            <legend>Personal Details</legend>
+        </fieldset>
+        <fieldset>
+            <legend>Please enter comments here</legend>
+            <label for="comments">omments:</label><br>
+            <textarea name="comments" id="" cols="40" rows="5"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Comments">
+    </form>
+
+    <!-- <?php
+        if(issest($_POST['submit'])){
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $gender = $_POST['gender'];
+            $age = $_POST['age'];
+            $comments= $_POST['comments'];
+
+            echo "Thank you .$name. for the following comments:<br>";
+            echo $comments. "<br>";
+            echo "Well reach you at .$email"
+        }
+
+    ?> -->
+
+
+</body>
+</html>
