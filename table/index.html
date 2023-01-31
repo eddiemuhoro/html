@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script src=""></script>
     <title>Document</title>
 </head>
 <body>
+    <!--scrolling text-->
+    <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="0" onmousemove="this.stop()" onmouseout="this.start()">
+        <h1 style="color: red;">This is a scrolling text</h1>
+    </marquee>
     <table border>
         <tr>
             <th style="color: brown;background-color: yellow;" colspan="2">Fame</th>
@@ -36,27 +42,49 @@
     <dd>That was my table</dd>
     <br><br>
 
-  <form action="post">
+<form action="../php/insert.php" action="POST">
     <fieldset>
-       <input type="text" name="name" id="name" placeholder="Enter your name">
-    <input type="text" name="email" id="email" placeholder="Enter your email"><br>
-    <input type="checkbox" name="vehicle" value="Car"> I have a car<br>
-    <input type="checkbox" name="vehicle" value=""> I have a bike<br>
-    <input type="radio" name="gender" value="gender">Male<br>
-    <input type="radio" name="gender" value="ds">Female<br>
-    <input type="submit" value="Submit">
-    <input type="option" name="" id=""><br>
+        <input type="text" name="name" id="name" value="" placeholder="Enter your name">
+        <input type="text" name="email" id="email" placeholder="Enter your email"><br>
+        <input type="checkbox" name="vehicle" value="Car"> I have a car<br>
+        <input type="checkbox" name="vehicle" value=""> I have a bike<br>
+        <input type="radio" name="gender" value="gender">Male<br>
+        <input type="radio" name="gender" value="ds">Female<br>
+        
+        <input type="option" name="" id=""><br>
 
-    <select name="" id="">
-        <option>Kenya</option>
-        <option>Tanzania</option>
-        <option>Uganda</option>
-        <option>Rwanda</option>
-        <option>Burundi</option>
-    </select>
-    </frame>
-</fieldset>
-  </form>
+        <select name="" id="">
+            <option>Kenya</option>
+            <option>Tanzania</option>
+            <option>Uganda</option>
+            <option>Rwanda</option>
+            <option>Burundi</option>
+        </select>
+        </frame>
+    </fieldset>
+    <fieldset>
+        <textarea name="comments" id="" cols="40" rows="5"></textarea>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <table border="1">
     <tr>
@@ -69,12 +97,12 @@
     </tr>
     <tr>
         <td>Less than 1000</td>
-        <td rowspan="2" valign="top" style="background-color: red; color: aqua;">14th Feb</td>
-        <td>14th Feb</td>
+        <td rowspan="2" valign="center" style="background-color: red; color: aqua;">14<sup>th</sup> Feb</td>
+        <td>14<sup>th</sup> Feb</td>
     </tr>
     <tr>
         <td>More than 1000</td>
-        <td>14th Feb</td>
+        <td>14<sup>th</sup> Feb</td>
     </tr>
   </table>
 </body>
